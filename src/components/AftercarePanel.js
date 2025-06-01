@@ -1,22 +1,19 @@
-import React from "react";
-<<<<<<< HEAD
-import ArrowNav from "./ArrowNav";
-=======
-import ArrowNav from "./ArrowNav.jsx";
->>>>>>> gh-pages
-import "./../styles/AftercarePanel.css";
-import html2pdf from "html2pdf.js";
-
-export default function AftercarePanel() {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = AftercarePanel;
+var react_1 = require("react");
+var ArrowNav_1 = require("./ArrowNav");
+require("./../styles/AftercarePanel.css");
+var html2pdf_js_1 = require("html2pdf.js");
+function AftercarePanel() {
     function handlePrint() {
-        const element = document.getElementById("aftercare-print");
-
-        const opt = {
+        var element = document.getElementById("aftercare-print");
+        var opt = {
             margin: [0.5, 0.5, 0.5, 0.5], // top, left, bottom, right in inches
             filename: 'HurtsSoGood_Aftercare_Guide.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: {
-                scale: 2,        // Higher for better quality
+                scale: 2, // Higher for better quality
                 useCORS: true,
                 scrollX: 0,
                 scrollY: 0,
@@ -24,13 +21,9 @@ export default function AftercarePanel() {
             },
             jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
         };
-
-
-        html2pdf().set(opt).from(element).save();
+        (0, html2pdf_js_1.default)().set(opt).from(element).save();
     }
-
-    return (
-        <section className="aftercare-panel" id="aftercare">
+    return (<section className="aftercare-panel" id="aftercare">
             <div id="aftercare-print">
                 <div className="aftercare-container">
                     <h2 className="aftercare-title">Tattoo Aftercare</h2>
@@ -94,9 +87,8 @@ export default function AftercarePanel() {
                         🖨️ Print as PDF
                     </button>
 
-                    <ArrowNav prevId="faq" />
+                    <ArrowNav_1.default prevId="faq"/>
                 </div>
             </div>
-        </section>
-    );
+        </section>);
 }
