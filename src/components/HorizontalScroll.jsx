@@ -42,7 +42,7 @@ export default function HorizontalScroll() {
         <div className="scroll-container" ref={scrollRef}>
             <Panel bgColor="#0C0C0C" id="cover">
                 <div className="logo-container">
-                    <img src="public/images.png" alt="Hurts So Good Logo" className="oval-logo" />
+                    <img src={`${import.meta.env.BASE_URL}images.png`} alt="Hurts So Good Logo" className="oval-logo" />
                 </div>
                 <h1 className="shop-name">Hurts So Good</h1>
                 <p className="shop-address">123 Ink Street, Austin, TX 78701</p>
@@ -63,7 +63,7 @@ export default function HorizontalScroll() {
 Trained in Nordic runic illustration and dotwork. Known for custom sleeves with spiritual themes. 
 “Ink is my medium; symmetry is my religion.”`}
                         instagram="https://instagram.com/raven_inkshade"
-                        avatar="public/artist_1.jpg"
+                        avatar={`${import.meta.env.BASE_URL}artist_1.jpg`}
                     />
                     <ArtistCard
                         name="Lex Needlecraft"
@@ -71,7 +71,7 @@ Trained in Nordic runic illustration and dotwork. Known for custom sleeves with 
 Fine arts grad blending emotion and color into vivid, translucent designs. 
 “Tattooing is painting that lasts forever.”`}
                         instagram="https://instagram.com/raven_inkshade"
-                        avatar="public/artist_2.jpg"
+                        avatar={`${import.meta.env.BASE_URL}artist_2.jpg`}
 
                     />
                     <ArtistCard
@@ -80,7 +80,7 @@ Fine arts grad blending emotion and color into vivid, translucent designs.
 Old-school apprentice turned legend, known for bold eagles, daggers, and pin-up sets.
 “Bold lines. Bright color. No apologies.”`}
                         instagram="https://instagram.com/raven_inkshade"
-                        avatar="public/artist_3.jpg"
+                        avatar={`${import.meta.env.BASE_URL}artist_3.jpg`}
 
                     />
                 </div>
