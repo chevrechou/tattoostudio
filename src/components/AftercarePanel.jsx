@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import ArrowNav from "./ArrowNav";
-=======
 import ArrowNav from "./ArrowNav.jsx";
->>>>>>> gh-pages
 import "./../styles/AftercarePanel.css";
 import html2pdf from "html2pdf.js";
 

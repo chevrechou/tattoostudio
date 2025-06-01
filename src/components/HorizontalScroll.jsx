@@ -1,15 +1,4 @@
 import React, { useRef, useEffect } from "react";
-<<<<<<< HEAD
-import Panel from "./Panel";
-import ArtistCard from "./ArtistCard";
-import FAQItem from "./FAQItem";
-import ArrowNav from "./ArrowNav";
-import MouseScrollHint from "./MouseScrollHint";
-import "./../styles/HorizontalScroll.css";
-import "./../styles/AftercarePanel.css";
-import AboutSection from "./AboutSection";
-import AftercarePanel from "./AftercarePanel";
-=======
 import Panel from "./Panel.jsx";
 import ArtistCard from "./ArtistCard.jsx";
 import FAQItem from "./FAQItem.jsx";
@@ -18,7 +7,6 @@ import "./../styles/HorizontalScroll.css";
 import "./../styles/AftercarePanel.css";
 import AboutSection from "./AboutSection.jsx";
 import AftercarePanel from "./AftercarePanel.jsx";
->>>>>>> gh-pages
 
 export default function HorizontalScroll() {
     const scrollRef = useRef(null);
@@ -54,11 +42,7 @@ export default function HorizontalScroll() {
         <div className="scroll-container" ref={scrollRef}>
             <Panel bgColor="#0C0C0C" id="cover">
                 <div className="logo-container">
-<<<<<<< HEAD
-                    <img src="public/images.png" alt="Hurts So Good Logo" className="oval-logo" />
-=======
                     <img src={`${import.meta.env.BASE_URL}images.png`} alt="Hurts So Good Logo" className="oval-logo" />
->>>>>>> gh-pages
                 </div>
                 <h1 className="shop-name">Hurts So Good</h1>
                 <p className="shop-address">123 Ink Street, Austin, TX 78701</p>
@@ -79,11 +63,7 @@ export default function HorizontalScroll() {
 Trained in Nordic runic illustration and dotwork. Known for custom sleeves with spiritual themes. 
 “Ink is my medium; symmetry is my religion.”`}
                         instagram="https://instagram.com/raven_inkshade"
-<<<<<<< HEAD
-                        avatar="public/artist_1.jpg"
-=======
                         avatar={`${import.meta.env.BASE_URL}artist_1.jpg`}
->>>>>>> gh-pages
                     />
                     <ArtistCard
                         name="Lex Needlecraft"
@@ -91,11 +71,7 @@ Trained in Nordic runic illustration and dotwork. Known for custom sleeves with 
 Fine arts grad blending emotion and color into vivid, translucent designs. 
 “Tattooing is painting that lasts forever.”`}
                         instagram="https://instagram.com/raven_inkshade"
-<<<<<<< HEAD
-                        avatar="public/artist_2.jpg"
-=======
                         avatar={`${import.meta.env.BASE_URL}artist_2.jpg`}
->>>>>>> gh-pages
 
                     />
                     <ArtistCard
@@ -104,11 +80,7 @@ Fine arts grad blending emotion and color into vivid, translucent designs.
 Old-school apprentice turned legend, known for bold eagles, daggers, and pin-up sets.
 “Bold lines. Bright color. No apologies.”`}
                         instagram="https://instagram.com/raven_inkshade"
-<<<<<<< HEAD
-                        avatar="public/artist_3.jpg"
-=======
                         avatar={`${import.meta.env.BASE_URL}artist_3.jpg`}
->>>>>>> gh-pages
 
                     />
                 </div>
