@@ -1,0 +1,41 @@
+.arrow-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrow-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: black;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.arrow-white {
+  color: white;
+}
+
+.arrow-nav:hover {
+  color: gray;
+  transform: scale(1.15);
+}
+
+.wiggle-right {
+  animation: wiggle-right 1.5s infinite ease-in-out;
+}
+
+.wiggle-left {
+  animation: wiggle-left 1.5s infinite ease-in-out;
+}
+
+@keyframes wiggle-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
+@keyframes wiggle-left {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-6px); }
+}
