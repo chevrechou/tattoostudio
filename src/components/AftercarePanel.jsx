@@ -26,7 +26,7 @@ export default function AftercarePanel() {
     }
 
     return (
-        <section className="aftercare-panel" id="aftercare">
+        <section className="aftercare-panel" id="aftercare" >
             <div id="aftercare-print">
                 <div className="aftercare-container">
                     <h2 className="aftercare-title">Tattoo Aftercare</h2>

@@ -7,6 +7,7 @@ import "./../styles/HorizontalScroll.css";
 import "./../styles/AftercarePanel.css";
 import AboutSection from "./AboutSection.jsx";
 import AftercarePanel from "./AftercarePanel.jsx";
+import CTAPanel from "./CTAPanel.jsx";
 
 export default function HorizontalScroll() {
     const scrollRef = useRef(null);
@@ -55,7 +56,7 @@ export default function HorizontalScroll() {
             </Panel>
 
             <Panel id="artists">
-                <h2>Our Artists</h2>
+                <h2 className="artist-header">Our Artists</h2>
                 <div className="artist-grid">
                     <ArtistCard
                         name="Raven Inkshade"
@@ -111,12 +112,20 @@ Old-school apprentice turned legend, known for bold eagles, daggers, and pin-up 
                         question="Can I get tattooed while pregnant?"
                         answer="We do not tattoo pregnant or nursing clients for safety reasons."
                     />
+                    <FAQItem
+                        question="How should I prepare for my appointment?"
+                        answer="Get a good night’s sleep, eat beforehand, stay hydrated, and avoid alcohol or blood thinners."
+                    />
                 </div>
                 <ArrowNav prevId="artists" nextId="aftercare" />
             </Panel>
             <Panel id="aftercare" bgColor="#0C0C0C">
                 <AftercarePanel />
             </Panel >
+
+            <Panel id="cta" bgColor="#0C0C0C">
+                <CTAPanel />
+            </Panel>
 
         </div >
     );
