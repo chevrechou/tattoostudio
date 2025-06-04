@@ -1,5 +1,4 @@
 import React from "react";
-import ArrowNav from "./ArrowNav.jsx";
 import "./../styles/AftercarePanel.css";
 import html2pdf from "html2pdf.js";
 
@@ -89,8 +88,6 @@ export default function AftercarePanel() {
                     <button className="download-btn" onClick={handlePrint}>
                         🖨️ Print as PDF
                     </button>
-
-                    <ArrowNav prevId="faq" />
                 </div>
             </div>
         </section>

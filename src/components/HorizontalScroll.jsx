@@ -121,10 +121,12 @@ Old-school apprentice turned legend, known for bold eagles, daggers, and pin-up 
             </Panel>
             <Panel id="aftercare" bgColor="#0C0C0C">
                 <AftercarePanel />
+                <ArrowNav prevId="faq" nextId="cta" />
             </Panel >
 
             <Panel id="cta" bgColor="#0C0C0C">
                 <CTAPanel />
+                <ArrowNav prevId="aftercare" variant="white"/>
             </Panel>
 
         </div >

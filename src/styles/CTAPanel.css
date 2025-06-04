@@ -1,48 +1,65 @@
 .cta-container {
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  max-width: 700px;
-  margin: auto;
-  font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Helvetica Neue', sans-serif;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.cta-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cta-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .cta-subtext {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 40px;
-  letter-spacing: 0.5px;
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.cta-subtext a {
+    color: white;
+    text-decoration: underline;
 }
 
 .cta-options {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .cta-button {
-  border: 1px solid white;
-  color: white;
-  text-decoration: none;
-  padding: 14px 24px;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: uppercase;
-  background: transparent;
-  border-radius: 6px;
-  transition: background 0.3s ease, color 0.3s ease;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-  background: white;
-  color: black;
+    background: white;
+    color: black;
+    transform: translateY(-2px) scale(1.02);
 }
