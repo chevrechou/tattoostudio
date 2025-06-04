@@ -112,7 +112,7 @@ Old-school apprentice turned legend, known for bold eagles, daggers, and pin-up 
                         answer="We do not tattoo pregnant or nursing clients for safety reasons."
                     />
                 </div>
-                <ArrowNav prevId="cover" nextId="aftercare" />
+                <ArrowNav prevId="artists" nextId="aftercare" />
             </Panel>
             <Panel id="aftercare" bgColor="#0C0C0C">
                 <AftercarePanel />
